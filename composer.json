@@ -18,15 +18,15 @@
         "php": "^8.0",
         "elasticsearch/elasticsearch": "^7.13",
         "ensi/laravel-elastic-query": "^0.3.0",
-        "illuminate/contracts": "^8.37 || ^9.0",
-        "illuminate/support": "^8.0 || ^9.0",
+        "illuminate/contracts": "^8.37 || ^9.0 || ^10.0 || ^11.0",
+        "illuminate/support": "^8.0 || ^9.0 || ^10.0 || ^11.0",
         "spatie/laravel-package-tools": "^1.4.3",
         "webmozart/assert": "^1.11"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.2",
         "mockery/mockery": "^1.4",
-        "orchestra/testbench": "^6.15 || ^7.0",
+        "orchestra/testbench": "^6.23 || ^7.0 || ^8.0 || ^9.0",
         "pestphp/pest": "^1.18",
         "pestphp/pest-plugin-laravel": "^1.1",
         "php-parallel-lint/php-var-dump-check": "^0.5.0",
