@@ -9,6 +9,7 @@ use Ensi\LaravelElasticQuerySpecification\Contracts\QueryParameters;
 use Ensi\LaravelElasticQuerySpecification\Specification\CompositeSpecification;
 use Ensi\LaravelElasticQuerySpecification\Tests\Data\Models\ProductsIndex;
 use Illuminate\Support\Collection;
+
 use function PHPUnit\Framework\assertCount;
 use function PHPUnit\Framework\assertEquals;
 use function PHPUnit\Framework\assertEqualsCanonicalizing;
