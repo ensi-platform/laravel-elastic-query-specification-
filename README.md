@@ -1,7 +1,7 @@
 # Laravel Elastic Query Specification
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ensi/laravel-elastic-query-specification.svg?style=flat-square)](https://packagist.org/packages/ensi/laravel-elastic-query-specification)
-[![Tests](https://github.com/ensi-platform/laravel-elastic-query-specification/actions/workflows/run-tests.yml/badge.svg?branch=v8)](https://github.com/ensi-platform/laravel-elastic-query-specification/actions/workflows/run-tests.yml)
+[![Tests](https://github.com/ensi-platform/laravel-elastic-query-specification/actions/workflows/run-tests.yml/badge.svg?branch=v7)](https://github.com/ensi-platform/laravel-elastic-query-specification/actions/workflows/run-tests.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/ensi/laravel-elastic-query-specification.svg?style=flat-square)](https://packagist.org/packages/ensi/laravel-elastic-query-specification)
 
 Extension for [ensi/laravel-elastic-query](https://github.com/ensi-platform/laravel-elastic-query/) to describe queries in a declarative way.
