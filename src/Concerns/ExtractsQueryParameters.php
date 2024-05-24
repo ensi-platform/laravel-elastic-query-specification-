@@ -91,6 +91,6 @@ trait ExtractsQueryParameters
 
     protected function config(string $key, mixed $default = null): mixed
     {
-        return config('laravel-elastic-query.parameters.'.$key, $default ?? $key);
+        return config('laravel-elastic-query-specification.parameters.' . $key, $default ?? $key);
     }
 }

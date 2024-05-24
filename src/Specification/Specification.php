@@ -180,7 +180,7 @@ class Specification
     }
 
     /**
-     * @return Collection<int,AllowedFacet>
+     * @return Collection<string,AllowedFacet>
      */
     public function facets(): Collection
     {

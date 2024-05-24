@@ -1,13 +1,35 @@
 # Laravel Elastic Query Specification
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/ensi/laravel-elastic-query-specification.svg?style=flat-square)](https://packagist.org/packages/ensi/laravel-elastic-query-specification)
+[![Tests](https://github.com/ensi-platform/laravel-elastic-query-specification/actions/workflows/run-tests.yml/badge.svg?branch=v8)](https://github.com/ensi-platform/laravel-elastic-query-specification/actions/workflows/run-tests.yml)
+[![Total Downloads](https://img.shields.io/packagist/dt/ensi/laravel-elastic-query-specification.svg?style=flat-square)](https://packagist.org/packages/ensi/laravel-elastic-query-specification)
+
 Extension for [ensi/laravel-elastic-query](https://github.com/ensi-platform/laravel-elastic-query/) to describe queries in a declarative way.
 
 ## Installation
 
 1. Install [ensi/laravel-elastic-query](https://github.com/ensi-platform/laravel-elastic-query/) https://github.com/ensi-platform/laravel-elastic-query#installation
-2. `composer require ensi/laravel-elastic-query-specification`
+2. Install this package via composer:
 
-## Usage
+```bash
+composer require ensi/laravel-elastic-query-specification
+```
+
+## Version Compatibility
+
+| Laravel Elastic Query Specification                                                                | Laravel                              | PHP  | Laravel Elastic Query |
+|----------------------------------------------------------------------------------------------------|--------------------------------------|------|-----------------------|
+| ^0.1.0                                                                                             | ^8.0                                 | ^8.0 | ^0.2.0                |
+| ^0.2.0                                                                                             | ^8.0                                 | ^8.0 | ^0.3.0                |
+| ^0.2.3                                                                                             | ^8.0 \|\| ^9.0                       | ^8.0 | ^0.3.0                |
+| ^0.3.0                                                                                             | ^8.0 \|\| ^9.0                       | ^8.0 | ^0.3.0                |
+| ^7.0.0                                                                                             | ^8.0 \|\| ^9.0                       | ^8.0 | ^7.0                  |
+| ^7.0.2                                                                                             | ^8.0 \|\| ^9.0 \|\| ^10.0            | ^8.0 | ^7.0                  |
+| ^7.0.3                                                                                             | ^8.0 \|\| ^9.0 \|\| ^10.0 \|\| ^11.0 | ^8.0 | ^7.0.21               |
+| ^7.1.4                                                                                             | ^9.0 \|\| ^10.0 \|\| ^11.0           | ^8.1 | ^7.1.0                |
+| ^8.x ([see details](https://github.com/ensi-platform/laravel-elastic-query-specification/tree/v8)) | ^9.0 \|\| ^10.0 \|\| ^11.0           | ^8.1 | ^8.1.0                |
+
+## Basic usage
 
 All types of declarative queries are based on the specification. It contains definitions of available filters, sorts, and aggregates.
 
@@ -293,14 +315,13 @@ Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 ### Testing
 
 1. composer install
-2. npm i
-3. Start Elasticsearch in your preferred way.
-4. Copy `phpunit.xml.dist` to `phpunit.xml` and set correct env variables there
-6. composer test
+2. start Elasticsearch in your preferred way
+3. if you need change `ELASTICSEARCH_HOSTS`, copy `phpunit.xml.dist` to `phpunit.xml` and fill value
+4. composer test
 
 ## Security Vulnerabilities
 
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
+Please review [our security policy](.github/SECURITY.md) on how to report security vulnerabilities.
 
 ## License
 
