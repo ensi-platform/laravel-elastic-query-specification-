@@ -2,6 +2,7 @@
 
 use Ensi\LaravelElasticQuerySpecification\Tests\UnitTestCase;
 use Ensi\LaravelElasticQuerySpecification\Tests\UnitTests\Concerns\Stubs\ExtractsQueryParametersStub;
+
 use function PHPUnit\Framework\assertEquals;
 
 uses(UnitTestCase::class);
