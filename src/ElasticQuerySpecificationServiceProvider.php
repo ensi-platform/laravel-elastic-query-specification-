@@ -3,16 +3,13 @@
 namespace Ensi\LaravelElasticQuerySpecification;
 
 use Illuminate\Foundation\Application;
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
-class ElasticQuerySpecificationServiceProvider extends PackageServiceProvider
+class ElasticQuerySpecificationServiceProvider extends ServiceProvider
 {
-    public function configurePackage(Package $package): void
+    public function register(): void
     {
-        $package
-            ->name('laravel-elastic-query-specification')
-            ->hasConfigFile();
+        $this->mergeConfigFrom(__DIR__ . '/../config/laravel-elastic-query-specification.php', 'laravel-elastic-query-specification');
 
         $this->app->bind(
             QueryBuilderRequest::class,
@@ -20,10 +17,12 @@ class ElasticQuerySpecificationServiceProvider extends PackageServiceProvider
         );
     }
 
-    public function provides(): array
+    public function boot(): void
     {
-        return [
-            QueryBuilderRequest::class,
-        ];
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__ . '/../config/laravel-elastic-query-specification.php' => config_path('laravel-elastic-query-specification.php'),
+            ], 'config');
+        }
     }
 }
